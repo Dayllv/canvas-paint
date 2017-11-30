@@ -39,6 +39,8 @@ $('clear-img').onclick = function(){
 //画笔
 $('tool-pen').onclick = function(){
 	activeBtn(this);
+	dW = 2;
+	if(dC =="white")dC = 'black';
 	settingDraw();
 	draw();
 }
@@ -56,6 +58,7 @@ $('tool-eraser').onclick = function(){
 $('tool-brush').onclick = function(){
 	activeBtn(this);
 	dW = 10;
+	if(dC =="white")dC = 'black';
 	settingDraw();
 	draw();
 }
